@@ -27,3 +27,9 @@ print (int(16 / 2))
 # Create a message that reveals your favorite number
 fave_num = 11
 print ("My favorite number is " + str(fave_num) + "!")
+
+# Write a Happy Birthday Message!
+name = "Gary"
+age = 64
+message = "Happy " + str(age) + "th birthday, " + name
+print (message)
