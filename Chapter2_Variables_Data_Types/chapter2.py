@@ -20,7 +20,10 @@ first_name = "ada"
 last_name = "lovelace"
 full_name = first_name + " " + last_name
 print(full_name.title())
-print("Hello, " + full_name.title())
+print("Hello, " + full_name.title())\
+
+# Escaping Strings
+# When you want python to interpret a string differently
 
 # Whitespace
 # To add a tab: (use \t)
@@ -30,11 +33,20 @@ print ("Hey there" "\nHandsome")
 # To strip whitespace: use (.rstrip) method
 # .lstrip() for to clear left space
 
-# Integers
+# Integers-- whole numbers
 # Arithmetic Operators
 # Addition (+)
 # Subtraction (-)
 # Multiplication (*)
 # Division (/)
+# Python supports oder of operations! Careful
 print (2 + 3)
 print (5 * 4)
+
+# Floats - Any number with a decimal
+
+#Complex Numbers
+# fairly advanced, used for imaginary numbers
+
+# Boolean
+# One of two values, True or False 
