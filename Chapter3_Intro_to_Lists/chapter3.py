@@ -1,7 +1,6 @@
-# Lists and Dictionaries
+# Lists
 # A list is a collection of items in a particular orderself.
 # You can put anything in a list
-
 bicycles = ['cannondale', 'trek', 'redline']
 print (bicycles)
 
@@ -54,4 +53,4 @@ print(sorted(cars))
 # Printing in reverse order
 print (cars.reverse())
 # Finding the length of a list
-print (len(cars))
+print (len(cars)

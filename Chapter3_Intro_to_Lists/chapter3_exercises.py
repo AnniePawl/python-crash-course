@@ -1,4 +1,6 @@
-# Sort the names of some friends. Print each name by accessing each element one at a time
+
+# Sort the names of some friends.
+# Print each name by accessing each element one at a time
 my_friends = ['Rebi','Grace','Nicky','Clara']
 print (my_friends[0])
 print (my_friends[1])
@@ -18,10 +20,10 @@ transport_modes = ['car','bike','motorcycle','scooter']
 message = "I would like to own a " + transport_modes[0] + " or maybe a " + transport_modes[1] + " but definitely neither a " + transport_modes[2] + " nor a " + transport_modes[3]
 print (message)
 
+# More Practice
 utensils = ['fork', 'spoon', 'knife']
 print (utensils[1].title())
 print ("My favorite utensil is hands down the " + utensils[0].title() + ". But I'm also a big fan of the " + utensils[1].title() + " if I'm being perfectly honest.")
-
 
 # Make a list w/3 people. Use list to print a message to each person
 guest_list = ['Nancy','Gary','Donna','Ted']
@@ -71,3 +73,69 @@ print(places_to_see)
 places_to_see.reverse()
 places_to_see.sort()
 print (places_to_see)
+
+# More Sorting Practice
+# Permanently sort and revsere sort
+b_words = []
+b_words.append("butter")
+b_words.append("bronco")
+b_words.append("buzzer")
+b_words.append("bbq")
+print (b_words)
+b_words.sort()
+print (b_words)
+b_words.sort(reverse=True)
+
+# Temporarily sort a list
+r_words = ['ride','rhino','ribbon','red','rainbow']
+print (sorted(r_words))
+
+# Print list in Reverse
+r_words.reverse()
+print (r_words)
+
+
+# More List Practice
+fruit_list =  ['apples','oranges','pears']
+print (fruit_list[-1].upper())
+print ("I've always liked " + fruit_list[1].title()
++ " the best!")
+fruit_list[1] = 'strawberries'
+print("How many " + fruit_list[1] + " can I have?")
+
+
+animals = ['birds', 'turles','dogs']
+print("i love " + animals[1])
+animals[1] = 'cats'
+print ("I love " + animals[1])
+animals.append('cats')
+print (animals)
+
+# Add stuff to an Empty List
+# Then delete some of the stuff
+empty = []
+empty.append("Apples")
+empty.append("Oranges")
+empty.append("Bread")
+print (empty)
+print (empty[1])
+empty[1] = "Milk"
+print (empty[1])
+empty.append("Eggs")
+empty.append("Cheese")
+print (empty)
+del empty[0]
+print (empty)
+# Use pop(), show that you can still access popped item
+popped = empty.pop()
+print (popped)
+
+to_visit = ['sydney','milan','cairo']
+to_visit.sort(reverse=True)
+print(to_visit)
+
+to_eat = ['berry', 'toast', 'cracker']
+print (sorted(to_eat))
+to_eat.reverse()
+print(to_eat)
+print (len(to_eat))

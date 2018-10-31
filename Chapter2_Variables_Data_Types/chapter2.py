@@ -15,6 +15,12 @@ name = "Ada Lovelace"
 print (name.title())
 # .title() is a method that performs and action on a piece of data. Always followed by parenthesis
 
+# String Methods
+# .upper() will make all uppercase
+print (name.upper())
+# .lower() will make all lowercase
+print (name.lower())
+
 # Concatenating Strings
 first_name = "ada"
 last_name = "lovelace"
@@ -49,4 +55,4 @@ print (5 * 4)
 # fairly advanced, used for imaginary numbers
 
 # Boolean
-# One of two values, True or False 
+# One of two values, True or False
