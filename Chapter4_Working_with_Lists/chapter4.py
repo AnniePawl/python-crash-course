@@ -54,9 +54,14 @@ print(squares)
 # Working with Part of a List
 # Slicing a LIST to work with subset
 # Specify index of 1st and last elements(remember one-off)
-# If you don't specify 1st of last index,
+# If you don't specify 1st index, python will start from 0
+# If you don't specift 2nd index, python will print until last item
 players = ['lila','lexi','laura','lauren','lydia']
-print(players[0:2])
+print(players[:2])
+print(players[1:])
+# Use negatives to print numbers from end
+# This will print last 3 players in list 
+print (players[-3:])
 
 # Looping through a Slice
 # You can use "for loop" on list subset
@@ -97,4 +102,3 @@ dimensions = (400, 100)
 print("\nModified dimensions:")
 for dimension in dimensions:
     print(dimension)
-    
