@@ -133,3 +133,15 @@ print("I need the following items from the grocery store, Tom")
 for food in food_tuple:
     print(food.title())
 print("Call if you have any questions")
+
+
+# Additional Pracice
+breeds = ['wheaton','golden','poodle']
+for breed in breeds:
+    print("I have a " + breed)
+
+for value in range(1,4):
+    print(value)
+
+evens = list(range(0,5))
+print (evens)

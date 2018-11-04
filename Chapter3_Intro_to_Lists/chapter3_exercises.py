@@ -139,3 +139,52 @@ print (sorted(to_eat))
 to_eat.reverse()
 print(to_eat)
 print (len(to_eat))
+
+# More Practice
+pens = ['ball point','fountain','gel']
+print(pens[0].title())
+print(pens[1].title())
+print(pens[2].title())
+
+for pen in pens:
+    print("I love " + pen + " pens")
+
+print (pens[0].title() + " are my favorite")
+
+monsters = []
+monsters.append('goblin')
+monsters.append('vampire')
+monsters.append('devil')
+print (monsters)
+print (monsters[0].title())
+monsters[0] = 'fire ball'
+print (monsters)
+monsters.insert(0,'grizzly square')
+print (monsters)
+monsters.insert(1,'charmander')
+print (monsters)
+del monsters[1]
+print (monsters)
+monsters.pop(1)
+popped_monsters = monsters.pop()
+print (popped_monsters)
+print (monsters)
+monsters.remove('vampire')
+print (monsters)
+
+jam = ['raspberry','blueberry','strawberry']
+jam[0] = 'apple'
+print (jam[-1])
+jam.append('current')
+print (jam)
+jam.insert(1,'banana')
+jam.insert(1,'carrot')
+print (jam)
+del jam[0]
+# jam.pop()
+# jam.remove('banana')
+# jam.sort()
+# jam.sort(reverse=True)
+print(sorted(jam))
+print (jam)
+print(len(jam))

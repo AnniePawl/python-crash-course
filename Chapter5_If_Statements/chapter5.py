@@ -46,3 +46,29 @@ if user not in banned_users:
 
 # Boolean Expressions
 # True/False conditinoal tests
+
+# if-else statements
+age = 17
+if age >= 18:
+    print ("You're old enough to vote!")
+else:
+    print("You're too young to vote")
+
+# if-elif-else Chain
+# Use this if you have more than 2 possible conditions to evaluate
+# Python only executes one block in if-elif-else chain
+# Tests run in order until one passes
+# When a condition passes, python skips the rest
+if age < 4:
+    print("you get in for FREE!")
+elif age < 18:
+    print("Ticket costs $5")
+else:
+    print("Your admission is $10")
+# You can use infinate elif blocks
+# Just use multiple if statements if you want ot run through all the statments
+
+# Using if statements with Lists
+requested_sizes = ['small','extra-small']
+for requested_size in requested_sizes:
+    print("Adding these sizes to your cart")

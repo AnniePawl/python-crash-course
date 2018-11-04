@@ -45,3 +45,22 @@ my_car = car + " " + model
 print (my_car.title())
 
 print ("\tHello, Charles, \n How are you this fine eve?")
+
+
+material = "wood"
+print(material)
+
+bestie = "boo"
+print ("Hi " + bestie + "! I love you so much.")
+
+prince = "harRy"
+print (prince.title())
+print (prince.upper())
+print (prince.lower())
+
+quotee = "Beverly"
+quote = "\nRoses are red, \nViolets are blue,\nYou're an absolutely horrible person,\nI'm going to sue."
+print (quotee + " once said: " + quote)
+
+height = 7
+print ("He was " + str(height) + "ft tall!")

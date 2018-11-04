@@ -36,3 +36,20 @@ Namespaces are one honking great idea -- let's do more of those!
 - Use blank lines to organize your files
 - Don't use excessive blank lines!
 - Blank lines won't affect how code runs (python disregards vertical spacing), but significantly affects readability
+
+
+
+What is Adobe Digital Academy?
+-Alternative and accelerated pathway into tech
+-Adobe sponsers career switchers from non traditional backgrounds to attend a 3month bootcamp.
+-Qualified students can interview for an internship
+
+What we Look for in a candidate?
+(Applications all reviewed on a case by case basis)
+1.Growth mindset: Ability to integrate feedback and growth
+2.Passion for Technology: Dedication to learning to code and interest in programming
+innovative problem solving, and strong communication skills.
+3.Communication Skills: Application is well written, attention to detail and ideas communicated effectively
+4.Career Switchers: Demonstration of past success(does not need to be in a tech related)
+
+This program is open to anyone looking to transition careers and gain training and experience in web development
