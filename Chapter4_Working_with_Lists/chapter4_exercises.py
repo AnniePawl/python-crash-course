@@ -136,12 +136,91 @@ print("Call if you have any questions")
 
 
 # Additional Pracice
-breeds = ['wheaton','golden','poodle']
+breeds = []
+breeds.append("wheaton")
+breeds.append("golden-doodle")
+breeds.append("poodle")
+breeds.insert(0,"ridgeback")
+print(breeds)
+
 for breed in breeds:
-    print("I have a " + breed)
+    print("I have a " + breed.title())
 
-for value in range(1,4):
+numbers = list(range(0,5))
+print(numbers)
+
+squares = []
+for values in range(1,11):
+    square = values**2
+    squares.append(square)
+print(squares)
+
+cubes = []
+for value in range(1,11):
+    cube = value**3
+    cubes.append(cube)
+print(cubes)
+
+cubes = []
+for value in range(1,11):
+    cubes.append(value**3)
+print(cubes)
+
+digits = [2,6,4,1,7,4,22,5,4,9,77,3]
+print(max(digits))
+
+squares =  []
+for value in range(1,11):
+    square = value**2
+    squares.append(square)
+print(squares)
+
+# Squares List Comprehensions
+squares = [value**2 for value in range(1,11)]
+print(squares)
+
+cubes = []
+for value in range (1,11):
+    cube = value**3
+    cubes.append(cube)
+print(cubes)
+# Cubes List Comprehension
+cubes = [value**3 for value in range(1,11)]
+print(cubes)
+
+odds = list(range(1,11,2))
+print(odds)
+
+# print numbers 10-20
+for value in range(10,21):
     print(value)
+num1_20 = list(range(10,21))
+print(num1_20)
 
-evens = list(range(0,5))
-print (evens)
+digits = [3,5,66,44,5,67,54,7]
+print(max(digits))
+print(min(digits))
+print(sum(digits))
+print(sorted(digits))
+
+cubes = [value**3 for value in range(1,11)]
+print(cubes)
+
+# Slicing Practice
+flavors = ['grape','stawberry','watermelon','lemon']
+flavors.insert(1,'pineapple')
+print(flavors)
+print(flavors[0:2])
+print(flavors[:3])
+print(flavors[1:])
+# Loop through a slice
+print("my favorite flavors are: ")
+for flavor in flavors [:3]:
+    print(flavor.title())
+# Copy a List
+fave_flavors = flavors[:]
+fave_flavors.append('cranberry')
+del fave_flavors[1]
+fave_flavors.pop(3)
+fave_flavors.remove('watermelon')
+print(fave_flavors)
