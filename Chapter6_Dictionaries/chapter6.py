@@ -143,10 +143,7 @@ for topping in pizza['toppings']:
 # DICTIONARY in a Dictionary
 # ** Careful! Code can quickly become complicated
 players = {
-    'apawl': {
-    'first':'anna',
-    'last':'pawl',
-    'location':'sf'
+    'apawl': {'first':'anna','last':'pawl','location':'sf'
     },
     'jpawl':{
     'first':'joey',
@@ -154,3 +151,17 @@ players = {
     'location':'ny'
     },
     }
+
+for info in players.values():
+    print(info)
+    # should print dictionary of values
+    for keys in info.keys():
+        print(keys)
+
+# dictionary Access
+# dictionary value access
+print(players['apawl']['first'])
+print(players['bonny'])
+# error b/c key doesnt exist
+# Check dictionary key
+# Accessting by key is direct yay
