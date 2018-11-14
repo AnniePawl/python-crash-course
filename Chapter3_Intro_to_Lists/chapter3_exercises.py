@@ -1,4 +1,3 @@
-
 # Sort the names of some friends.
 # Print each name by accessing each element one at a time
 my_friends = ['Rebi','Grace','Nicky','Clara']
@@ -188,3 +187,11 @@ del jam[0]
 print(sorted(jam))
 print (jam)
 print(len(jam))
+
+yellow_stuff = []
+yellow_stuff.append('banana')
+yellow_stuff.append('daisy')
+yellow_stuff.append('ped Xing sign')
+print(yellow_stuff[0].title())
+print(yellow_stuff[-1].title())
+print("I have 3 " + yellow_stuff[0] + "s in my bag.")

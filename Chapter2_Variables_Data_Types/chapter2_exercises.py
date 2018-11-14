@@ -64,3 +64,12 @@ print (quotee + " once said: " + quote)
 
 height = 7
 print ("He was " + str(height) + "ft tall!")
+
+person = "anNa pAWL"
+print("Hello there, " + person.title() + "!")
+
+poem = "Roses are red\n\tViolets are blue\n\tYou're kind of shitty\n\tBut still I love you"
+print("He once wrote:\n\t" + poem )
+
+number_of_pets = 5
+print ("He has " + str(number_of_pets) + " pets!")
