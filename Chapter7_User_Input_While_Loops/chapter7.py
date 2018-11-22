@@ -43,5 +43,4 @@ while message != 'quit':
     message = input(prompt))
     print(message)
 
-
 # Using a Flag
