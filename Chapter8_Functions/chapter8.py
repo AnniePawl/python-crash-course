@@ -1,5 +1,15 @@
 #FUNCTIONS
 
+'''STYLING FUNCTIONS
+- Import statments at beginning of file
+- Descriptive names
+- Comment that explains concisely what func does, should appear right after func def, use docstring format
+- Default Values should go at end of parameter list
+- If default value, no spaces on either side of equal sign
+- Seperate functions with 2 blank lines
+'''
+
+
 # Simplest FUNCTION STRUCTURE
 # Define it, call it at the bottom
 def greet_user():
@@ -218,3 +228,35 @@ user_profile = build_profile('albert', 'einstein',
                              location='princeton',
                              field='physics')
 print(user_profile)
+
+
+# SORTING FUNCTIONS IN MODULES
+# Can store function in seperate file called, module --- then import that module into main program
+# import statement tell python to make code in module available to current currently running program
+# Importing ENTIRE MODULE
+module_name.function_name()
+# IMPORTING SPECIFIC FUNCTIONS
+from module_name import function_name
+# You can import as many as you want
+from module_name import fucntion_0, function_1, function_2
+
+
+ # FUNCTION ALIAS
+ # AS
+ import module_name as mn
+ # use a short, unique alias  so that name of function youre importing doesnt conflic with existing name, or if the function name is long
+# import statement renames function to mp, we can simply write mp() now to avoid confusion with another make_pasta function
+from pasta import make_pasta mp
+
+mp(12, 'pesto')
+mp(16, 'cheese')
+
+
+# MODULE ALIAS
+import pasta as p
+p.make_pasta(12, 'cheese')
+p.make_pasta(8, 'pesto')
+
+# Importing ALL FUNCS IN A MODULE
+# Use * to copy every function from one module to another program file
+# This time you can call without using dot notation, but be careful!
