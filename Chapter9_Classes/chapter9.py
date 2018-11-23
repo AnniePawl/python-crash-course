@@ -96,12 +96,15 @@ class Car():
         self.model = model
         self.year = year
         self.odometer_reading = 0
+        self.color = "blue"
 
     def read_odometer(self):
         '''print statement showing car's mileage'''
         print("This car has " + str(self.odometer_reading) + " miles on it")
 
 my_new_car = Car('BMW', 'a7', '1999')
+my_new_car.color = "black"
+print(my_new_car.color)
 my_new_car.read_odometer()
 
 # MODIFYING ATTRIBUTE VALUES
@@ -272,4 +275,8 @@ import car
 from car import car
 from Electric_car import ElectricCar
 
-# PYTHON STANDARD LIBRARY 
+# PYTHON STANDARD LIBRARY
+    # Included in each python installation
+    # You can use any function or class in standard library by including simple IMPORT STATEMENT at file top
+    # Take advantage of DICTIONARIES to connect pieces of information
+        # Try using OrderedDict class from collections modules
