@@ -41,3 +41,25 @@ describe_pet('butterfly','betsy')
 # Directly associate name and value in argument
 # Free you from worrying about correctly ordering arguments
 describe_pet(animal_type = 'bug', pet_name = 'bonny')
+
+# DEFAULT values
+# You can define a default value for each parameter
+# Py will use default unless argument in function call
+# def describe_pet(pet_name, animal_type ='dog')
+# CAREFUL about positioning! Put defaults at the end so python can interpret positional arguments correctly
+
+ #EQUIVALENT FUNCTION CALLS
+ # Several ways to call a function! Can use different styles
+# A cat named Charles
+describe_pet('charles')
+describe_pet(pet_name = 'charles')
+# A horse named Henrietta
+describe_pet ('henrietta','horse')
+describe_pet (pet_name = 'henrietta', animal_type = 'horse')
+describe_pet (animal_type = 'horse',pet_name = 'henrietta')
+
+# AVOIDING ARGUMENT ERRORS
+# Unmatched Arguments -- when you provide fewing or more arguments than necessary
+
+# RETURN VALUES  - the value that functions return
+# Allow you to move a lot of work into functions
