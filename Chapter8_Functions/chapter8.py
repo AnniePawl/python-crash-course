@@ -101,5 +101,77 @@ print(person)
 
 def build_person(first_name, last_name):
     '''return dict of info re person'''
-    person = {'first' = first_name, 'last' = last_name}
-    return person 
+    person = {'first':first_name, 'last':last_name}
+    return person
+
+super_person = build_person('fiona','gallagher')
+print(super_person)
+
+# USING A FUNCTION WITH A WHILE LOOP
+# *Don't forget a quit condition or loop is infinite
+'''while True:
+    print("\nPlease tell me your name: ")
+    print("(enter'q' at anytime to quit)")
+
+    f_name = input("First name: ")
+    if f_name == 'q':
+        break
+    l_name = input("Last name: ")
+    if l_name == 'q':
+        break
+
+formatted_name = get_formatted_name(f_name,l_name)
+print("\nHello " + formatted_name + '!')
+'''
+
+# PASSING A LIST
+# When you pass list into function, func gets direct access to contents of list
+def greet_users(names):
+    '''print simple greeting to each listed user'''
+    for name in names:
+        msg = "Hello, " + name.title() + "!"
+        print(msg)
+
+usernames = ['hanna','barb','sally']
+greet_users(usernames)
+
+# MODIDYING A LIST IN A FUNCTION
+# function can modify a list, and changes are permanent
+
+unprinted_designs = ['i phone case','robot pin','puppet']
+completed_models = []
+
+# Simulate printing each design until none are left
+# Move each to completed_models post printing
+
+# This example doesn't use functions ....
+while unprinted_designs:
+    current_design = unprinted_designs.pop()
+
+    print("Printing model: " + current_design)
+    completed_models.append(current_design)
+
+print("\nThe following models have been printed: ")
+for completed_model in completed_models:
+    print(completed_model)
+
+# Example above(WITH FUNCTIONS)
+def print_models(unprinted_designs, completed_models):
+    '''simulate printing each design
+    Move design to completed_models after printing'''
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        '''simulate creating 3d print from design'''
+        print("Printing model: " + current_design)
+        completed_models.append(current_design)
+
+def show_completed_models(completed_models):
+    '''show all models that were printed'''
+    print("\nThe following models have been printed: ")
+    for completed_model in completed_models:
+        print(completed_model)
+
+unprinted_designs = ['iphone case','barbie pendant']
+
+print_models(unprinted_designs, completed_models)
+show_completed_models(completed_models)
