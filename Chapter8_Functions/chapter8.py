@@ -95,3 +95,11 @@ print(person)
 
 person = get_formatted_name('betsy','boop')
 print(person)
+
+# RETURNING A DICTIONARY
+# Functions can return more complex data structures like lists and dictionaries
+
+def build_person(first_name, last_name):
+    '''return dict of info re person'''
+    person = {'first' = first_name, 'last' = last_name}
+    return person 
