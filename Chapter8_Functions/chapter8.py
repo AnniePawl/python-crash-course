@@ -51,8 +51,8 @@ describe_pet(animal_type = 'bug', pet_name = 'bonny')
  #EQUIVALENT FUNCTION CALLS
  # Several ways to call a function! Can use different styles
 # A cat named Charles
-describe_pet('charles')
-describe_pet(pet_name = 'charles')
+# describe_pet('charles')
+# describe_pet(pet_name = 'charles')
 # A horse named Henrietta
 describe_pet ('henrietta','horse')
 describe_pet (pet_name = 'henrietta', animal_type = 'horse')
@@ -63,3 +63,35 @@ describe_pet (animal_type = 'horse',pet_name = 'henrietta')
 
 # RETURN VALUES  - the value that functions return
 # Allow you to move a lot of work into functions
+def get_formatted_name(first_name, last_name):
+    '''return full name, neatly'''
+    full_name = first_name + ' ' + last_name
+    return full_name.title()
+
+musician = get_formatted_name('jimi','hendrix')
+print(musician)
+
+# Making an Argument Optional
+# Sometimes helpful so people using func can choose to provide extra info only if they want to
+# Examlple: Optionally enter middle name
+
+def get_formatted_name(first_name, middle_name, last_name):
+    full_name =  first_name + ' ' + middle_name + ' ' + last_name
+    return full_name.title()
+
+musician = get_formatted_name('jonh','lee','hooker')
+print(musician)
+# To make a value optional, give argument an empty default value
+# Set middle name default value to empty string and move to end of parameter list
+def get_formatted_name(first_name, last_name, middle_name=''):
+    if middle_name:
+        full_name =  first_name + ' ' + middle_name + ' ' + last_name
+    else:
+        full_name = first_name + ' ' + last_name
+    return full_name.title()
+
+person = get_formatted_name('gretta','henderson')
+print(person)
+
+person = get_formatted_name('betsy','boop')
+print(person)
