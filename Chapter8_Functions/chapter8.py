@@ -175,3 +175,46 @@ unprinted_designs = ['iphone case','barbie pendant']
 
 print_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+
+# PREVENTING FUNC FROM MODIFYING A LIST
+# Send COPY OF A LIST to a function like this:
+'''function_name(list_name[:])'''
+
+# PASSING ARBITRARY NUMBER OF ARGUMENTS
+# Sometimes you don't know ahead of time how many arguments your function needs
+def make_pasta(*sauces):
+    print(sauces)
+make_pasta('tomato')
+make_pasta('pesto','tomato','clam')
+# We can replace print statement with loop that runs through sauces and descibes each pasta dish being ordered
+def make_pasta(*sauces):
+    print("\nMaking pasta with the following sauces")
+    for sauce in sauces:
+        print("- " + sauce)
+
+make_pasta('pesto','tomato','clam')
+make_pasta('tomato')
+
+# Mixing POSITIONAL & ARBITRARY Arguments
+# Parameter that accepts arbitrary num of arguments should be placed last in fucnion def
+def make_pasta(size, *sauces):
+    print("\nMaking a " + str(size) + " inch bowl of pasta with the following sauces: ")
+    for sauce in sauces:
+        print("- " + sauce)
+
+make_pasta(4, 'pesto','tomato','clam')
+make_pasta(5, 'tomato')
+
+# USING ARBITRARY KEYWORD arguments
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+user_profile = build_profile('albert', 'einstein',
+                             location='princeton',
+                             field='physics')
+print(user_profile)
