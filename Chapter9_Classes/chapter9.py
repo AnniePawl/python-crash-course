@@ -232,4 +232,44 @@ my_tesla.describe_battery()
 
 # INSTANCES AS ATTRIBUTES
     # Sometimes good to reorganize classes into smaller classes
-    class Battery(self):
+    class Battery():
+        '''Attempt to model battery for electric car'''
+        def __init__(self, battery_size=70):
+            '''initialize battery attributes'''
+            self.battery_size = battery_size
+
+
+# MODELING REAL WORLD OBJECTS
+
+# IMPORTING CLASSES
+    # Files should be as uncluttered as possible
+    # Good to store classes in modules, then import class you need into main program
+
+    # IMPORTING A SINGLE CLASS
+    from car import Car
+
+# STORING MULTIPLE CLASSES in a MODULE
+    # You can store as many as you need in a module
+    from car import ElectricCar
+
+# IMPORTING MULTPLE CLASSES from a module
+
+# IMPORTING AN ENTIRE MODULE
+import car
+
+# IMPORTING ALL CLASSES from a MODULE
+    # Not really recommended
+        # Unclear what classes you're using from module
+        # Confusion with names in files
+    # Use this syntax to import every class
+    from module_name import *
+    # better to use the follwing though...
+    module_name.class_name
+
+# IMPORTING A MODULE INTO A MODULE
+# Sometimes you want to spread classes over several modules to kepe any one file from growing too large adn avoid storing unrelated classes in the same module
+# You might find that a class in one depends on a class in another. You can import required class into first module
+from car import car
+from Electric_car import ElectricCar
+
+# PYTHON STANDARD LIBRARY 
