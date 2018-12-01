@@ -1,58 +1,61 @@
-# Print Statement-- easiest way to get python program to communicate with you via terminalself.
-#Dont' forget! In Python3, print statement needs parenthesis
+# PRINT STATEMENT
+'''The easiest way to get python program to communicate with you via the terminal.
+*Dont Forget, in Python3, print statement needs parenthesis()
+'''
 print ("Hello World")
 
-#My First Varable!
+# MY FIRST VARIABLE
 message = "Life is Good"
 print (message)
+'''Variable Rules:
+ - Can contain letters, numbers, underscore
+ - Cannot start with a number
+ - NO spaces, use underscore
+ - Names should be short and descriptive
+ '''
 
-#Variable Rules
-# -Can contain letters, numbers, underscore
-# -Cannot start with a number
-# -NO spaces, use underscore
-# -Names should be short and descriptive
+# STRING METHODS
 name = "Ada Lovelace"
 print (name.title())
-# .title() is a method that performs and action on a piece of data. Always followed by parenthesis
-
-# String Methods
-# .upper() will make all uppercase
 print (name.upper())
-# .lower() will make all lowercase
 print (name.lower())
+''' .title() method that transforms name to title case.
+.upper() will make all uppercase of data. Always  .lower() will make all lowercase
+'''
 
-# Concatenating Strings
+# CONCATENATING STRINGS
 first_name = "ada"
 last_name = "lovelace"
 full_name = first_name + " " + last_name
 print(full_name.title())
-print("Hello, " + full_name.title())\
+print("Hello, " + full_name.title())
 
-# Escaping Strings
-# When you want python to interpret a string differently
-
-# Whitespace
-# To add a tab: (use \t)
+# ESCAPING STRINGS
+'''(\n) adds a new line
+(\t) adds a new tab
+(.rstrip) strips right whitespace
+(.lstrip) strips left whitespace
+'''
 print("\tPython")
-# To add a new line: (use \n)
 print ("Hey there" "\nHandsome")
-# To strip whitespace: use (.rstrip) method
-# .lstrip() for to clear left space
 
-# Integers-- whole numbers
-# Arithmetic Operators
-# Addition (+)
-# Subtraction (-)
-# Multiplication (*)
-# Division (/)
-# Python supports oder of operations! Careful
+# WORKING WITH NUMBERS
+'''Integers  (Whole Numbers)
+   Arithmetic Operators
+   Addition (+)
+   Subtraction (-)
+   Multiplication (*)
+   Division (/)
+   Python supports oder of operations! Careful
+'''
 print (2 + 3)
 print (5 * 4)
 
-# Floats - Any number with a decimal
-
-#Complex Numbers
-# fairly advanced, used for imaginary numbers
-
-# Boolean
-# One of two values, True or False
+# AVOIDING TYPE ERRORS w/ STRINGS
+'''Be careful when working w/ various types.
+   Make sure to tell python how to interpret certain values
+'''
+age = 25
+name = "Linda"
+message = "Happy " + str(age) + " birthday, " + name
+print(message)
