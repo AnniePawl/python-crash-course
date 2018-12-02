@@ -1,56 +1,95 @@
-# Lists
-# A list is a collection of items in a particular orderself.
-# You can put anything in a list
+# LISTS
+'''Lists are awesome!
+   - Lets you store info in one place
+   - A collection of items in a particular order
+   - You can put anything in a list
+   - Square brackets [ ] indicate a list
+   - List items seperated by commas'''
+
 bicycles = ['cannondale', 'trek', 'redline']
 print (bicycles)
 
-# Indexing
-# Don't forget indexing starts at zero!
-# You can access specific parts of list
-print (bicycles[0])
-print (bicycles[0].title())
-# -1 always returns last item in a list
-print (bicycles[-1])
+fruits = ['cherry', 'banana', 'kiwi']
+print(fruits)
 
-message = "My First bicycle was a " + bicycles[0].title() + "!"
-print (message)
 
-# To change the value in a list, use name of list followed by index of item you want to change, followed by new replacement value.
-motorcycles = ['yamaha','suzuki','honda']
-print (motorcycles)
+# INDEXING
+''' - Indexing allows you to access specific parts of a List
+    - Indexing starts at zero! [1] is second item
+    - To acccess last item, use special syntax [-1]
+    - Index [-2] returns second to last, etc'''
+
+print(bicycles[0])
+print(bicycles[0].title())
+print(bicycles[-1])
+
+message = "My first bike was a " + bicycles[-1].title()
+print(message)
+
+
+# MODIFY ELEMENTS IN A LIST
+'''To change a list value:
+   List name, followed by item index, followed by new value'''
+
+motorcycles = ['yamamha','honda','suzuki']
 motorcycles[0] = 'ducati'
 print(motorcycles)
-# To add elements to a list use .append
-motorcycles.append('bike')
-print (motorcycles)
-# To delete elements from a list use del
+
+# .append to add more items to the list(at end)
+motorcycles.append('ducati')
+motorcycles.append('blank')
+print(motorcycles)
+
+# insert() to insert item in specific location
+# Specify index, follwed by by value
+motorcycle.insert(0, 'ducati')
+print(motorcycles)
+
+# del to delete items from a list, just provide index
 del motorcycles[0]
-print (motorcycles)
-# To insert an item into a list use insert()
-motorcycles.insert(0, 'ducati')
+del motorcycles[1]
 print (motorcycles)
 
-# Removing items using pop() method
-# Will remove an item from any position
+# Removing items by VALUE
+'''In this case, even though ducati was removed from the list, it is still stored in a variable, allowing us to print a statement about it.'''
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
+print("A " + too_expensive.title() + " is too expensive")
+
+# pop() method to remove items
+''' - pop() is usually used to remove last item
+    - Can remove an item from any location, too
+    - Item no longer in list, BUT...
+    - Helpful b/c lets you work with item after pop!'''
 popped_motorcycle = motorcycles.pop(2)
 print (motorcycles)
 print (popped_motorcycle)
 
-# Removing items by value
-motorcycles.remove('ducati')
+first_owned = motorcycles.pop(0)
+last_owned = motorcycles.pop()
+print("The first motorcycle I owned was a " + first_owned + ". The last motocycle I owned was a " + last_owned)
+
 
 # ORGANIZING Lists
-# sort() method to permanently sort
+# sort() method to PERMANENTLY sort (Alphabetically!)
 cars = ['honda', 'toyota', 'mazda', 'ford']
 cars.sort()
 print(cars)
-# Reverse Alphabetical Order
-cars.sort(reverse=True)
-print (cars)
-# Temporarily Sorting Lists - Use sorted() function
-# This is maintain original order but present it in a sorted order
-print(sorted(cars))
-# Printing in reverse order
+# REVERSE ALPHABETICAL Order
+# (reverse = True)
+cars.sort(reverse = True)
+print(cars)
+# Printing in REVERSE ORDER (NOT alphabetical)
+# PERMANENT Change
 print (cars.reverse())
-# Finding the length of a list
+
+# TEMPORARILY Sorting Lists
+# Use sorted() function
+# This maintains original order, but presents sorted order
+print(sorted(cars))
+
+# Find LENGTH of LIST with len() function
 print (len(cars)
+
+# AVOIDING INDEX ERRORS
+# Be careful of 'list index out of range'

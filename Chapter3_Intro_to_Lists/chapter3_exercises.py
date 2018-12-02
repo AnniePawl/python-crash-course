@@ -1,28 +1,30 @@
 # Sort the names of some friends.
 # Print each name by accessing each element one at a time
-my_friends = ['Rebi','Grace','Nicky','Clara']
-print (my_friends[0])
-print (my_friends[1])
-print (my_friends[2])
-print (my_friends[3])
+my_friends = ['Rebi','Sarah','Nicky','Grace']
+print(my_friends[0])
+print(my_friends[1])
+print(my_friends[2])
+print(my_friends[3])
 
-siblings = ['joey','kathyrn']
-print (siblings[0].title())
+yellow_stuff = ['banana','sun']
+print(yellow_stuff[0])
+print(yellow_stuff[-1])
 
-# Text each friend. Text should be the same, but personalized with person's names
-message = 'Hey, ' + my_friends[2] +"! You look super good"
-print (message)
+# Send a greeting to friends in your list
+message = "I'm so into you"
+print('Hey, ' + my_friends[1] + "! You look amazing")
+print('Hey, ' + my_friends[2] + "! You look amazing")
+print(my_friends[0] + " " + message)
 
 # Make a list of modes of transportation
 # Use the list to make a seriesof statements about these items
-transport_modes = ['car','bike','motorcycle','scooter']
-message = "I would like to own a " + transport_modes[0] + " or maybe a " + transport_modes[1] + " but definitely neither a " + transport_modes[2] + " nor a " + transport_modes[3]
-print (message)
+transport_modes = ['bike','car','motorcycle','scooter']
+message = "I would love to own a " + transport_modes[0] + " or a " + transport_modes[1] + " but definitely neither a " + transport_modes[2] + " nor a " + transport_modes[3]
+print(message)
 
 # More Practice
-utensils = ['fork', 'spoon', 'knife']
-print (utensils[1].title())
-print ("My favorite utensil is hands down the " + utensils[0].title() + ". But I'm also a big fan of the " + utensils[1].title() + " if I'm being perfectly honest.")
+utensils = ['spoon','fork','knife']
+print("My favorite utensil is the " + utensils[0] + ". But I also love using " + utensils[1] + " . In no world would I ever use a " + utensils[-1])
 
 # Make a list w/3 people. Use list to print a message to each person
 guest_list = ['Nancy','Gary','Donna','Ted']
@@ -37,7 +39,7 @@ print (guest_list)
 print ("There are " + str(len(guest_list)) + " guests coming tonight!")
 
 
-# List Favorite candies. Replace some, add some, remove some.
+# Favorite candies. Replace some, add some, remove some.
 candy = ['starbust', 'twix','snickers']
 candy_message = "I'm dying for some " + candy[1].title() +  " tonight."
 print (candy_message)
@@ -195,3 +197,28 @@ yellow_stuff.append('ped Xing sign')
 print(yellow_stuff[0].title())
 print(yellow_stuff[-1].title())
 print("I have 3 " + yellow_stuff[0] + "s in my bag.")
+
+bugs = []
+bugs.append('beetle')
+bugs.append('lady bug')
+bugs.append('mosquito')
+print(bugs)
+
+bugs[0] = 'moth'
+bugs[-1] = 'ant'
+print(bugs)
+
+bugs.insert(0, 'butterfly')
+bugs.insert(1, 'fly')
+bugs.insert(2,'sheep beetle')
+print(bugs)
+
+del bugs[0]
+print(bugs)
+
+my_bug = bugs.pop(0)
+print("My favorite bug is the " + my_bug)
+print(bugs)
+
+bugs.remove('moth')
+print(bugs)
