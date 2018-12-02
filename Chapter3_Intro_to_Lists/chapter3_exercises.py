@@ -6,9 +6,59 @@ print(my_friends[1])
 print(my_friends[2])
 print(my_friends[3])
 
-yellow_stuff = ['banana','sun']
-print(yellow_stuff[0])
-print(yellow_stuff[-1])
+yellow_stuff = []
+yellow_stuff.append('banana')
+yellow_stuff.append('daisy')
+yellow_stuff.append('ped Xing sign')
+print(yellow_stuff[0].title())
+print(yellow_stuff[-1].title())
+print("I have 3 " + yellow_stuff[0] + "s in my bag.")
+
+# Add stuff to an Empty List
+# Then delete some of the stuff
+empty = []
+empty.append("Apples")
+empty.append("Oranges")
+empty.append("Bread")
+print (empty)
+print (empty[1])
+empty[1] = "Milk"
+print (empty[1])
+empty.append("Eggs")
+empty.append("Cheese")
+print (empty)
+del empty[0]
+print (empty)
+# Use pop(), show that you can still access popped item
+popped = empty.pop()
+print (popped)
+
+bugs = []
+bugs.append('beetle')
+bugs.append('lady bug')
+bugs.append('mosquito')
+print(bugs)
+
+bugs[0] = 'moth'
+bugs[-1] = 'ant'
+print(bugs)
+
+bugs.insert(0, 'ladybug')
+bugs.insert(1,'fly')
+bugs.insert(1,'dragonfly')
+print(bugs)
+
+del bugs[0]
+del bugs[1]
+print(bugs)
+
+my_bug = bugs.pop(0)
+print("My favorite bug is the " + my_bug)
+print(bugs)
+
+bugs.remove('moth')
+bugs.remove('ant')
+print(bugs)
 
 # Send a greeting to friends in your list
 message = "I'm so into you"
@@ -38,7 +88,6 @@ print (guest_list)
 # Print how many peple are coming using len()
 print ("There are " + str(len(guest_list)) + " guests coming tonight!")
 
-
 # Favorite candies. Replace some, add some, remove some.
 candy = ['starbust', 'twix','snickers']
 candy_message = "I'm dying for some " + candy[1].title() +  " tonight."
@@ -58,6 +107,23 @@ print (candy)
 candy.pop(2)
 print (candy)
 
+# More List Practice
+fruit_list =  ['apples','oranges','pears']
+print (fruit_list[-1].upper())
+print ("I've always liked " + fruit_list[1].title()
++ " the best!")
+fruit_list[1] = 'strawberries'
+print("How many " + fruit_list[1] + " can I have?")
+
+animals = ['birds', 'turles','dogs']
+print("i love " + animals[1])
+animals[1] = 'cats'
+print ("I love " + animals[1])
+animals.append('cats')
+print (animals)
+
+
+# SORTING PRACTICE
 # Make a list of places to visit
 # Find the length of the list
 # Use sorted() method to put in alphabetical order (temp)
@@ -94,42 +160,6 @@ print (sorted(r_words))
 # Print list in Reverse
 r_words.reverse()
 print (r_words)
-
-
-# More List Practice
-fruit_list =  ['apples','oranges','pears']
-print (fruit_list[-1].upper())
-print ("I've always liked " + fruit_list[1].title()
-+ " the best!")
-fruit_list[1] = 'strawberries'
-print("How many " + fruit_list[1] + " can I have?")
-
-
-animals = ['birds', 'turles','dogs']
-print("i love " + animals[1])
-animals[1] = 'cats'
-print ("I love " + animals[1])
-animals.append('cats')
-print (animals)
-
-# Add stuff to an Empty List
-# Then delete some of the stuff
-empty = []
-empty.append("Apples")
-empty.append("Oranges")
-empty.append("Bread")
-print (empty)
-print (empty[1])
-empty[1] = "Milk"
-print (empty[1])
-empty.append("Eggs")
-empty.append("Cheese")
-print (empty)
-del empty[0]
-print (empty)
-# Use pop(), show that you can still access popped item
-popped = empty.pop()
-print (popped)
 
 to_visit = ['sydney','milan','cairo']
 to_visit.sort(reverse=True)
@@ -190,35 +220,68 @@ print(sorted(jam))
 print (jam)
 print(len(jam))
 
-yellow_stuff = []
-yellow_stuff.append('banana')
-yellow_stuff.append('daisy')
-yellow_stuff.append('ped Xing sign')
-print(yellow_stuff[0].title())
-print(yellow_stuff[-1].title())
-print("I have 3 " + yellow_stuff[0] + "s in my bag.")
+# More PRACTICE
 
-bugs = []
-bugs.append('beetle')
-bugs.append('lady bug')
-bugs.append('mosquito')
-print(bugs)
+m_words = []
+m_words.append('math')
+m_words.append('monarchy')
+m_words.append('monkey')
+m_words.append('morning')
+m_words.append('mushroom')
+print(m_words)
+print(m_words[-2])
 
-bugs[0] = 'moth'
-bugs[-1] = 'ant'
-print(bugs)
+m_words.remove('morning')
+m_words.remove('monkey')
+print(m_words)
 
-bugs.insert(0, 'butterfly')
-bugs.insert(1, 'fly')
-bugs.insert(2,'sheep beetle')
-print(bugs)
+m_words.insert(0,'mullberry')
+m_words.insert(1,'mushy')
+m_words.insert(-1,'mustard')
+print(m_words)
 
-del bugs[0]
-print(bugs)
+del m_words[0]
+print(m_words)
 
-my_bug = bugs.pop(0)
-print("My favorite bug is the " + my_bug)
-print(bugs)
+m_words.sort()
+print(m_words)
+m_words.sort(reverse=True)
+print(m_words)
 
-bugs.remove('moth')
-print(bugs)
+p_words = []
+p_words.append('pickle')
+p_words.append('pinecone')
+p_words.insert(0,'possum')
+p_words.insert(1,'portrait')
+p_words.insert(2,'prickly')
+print(p_words)
+
+p_words.remove('portrait')
+p_words.remove('possum')
+print(p_words)
+
+p_words.append('plantain')
+p_words.append('pizza')
+p_words.insert(1,'poo')
+p_words.insert(0,'prince')
+print(p_words)
+
+del p_words[0]
+del p_words[-1]
+print(p_words)
+
+print(sorted(p_words))
+print(p_words)
+
+p_words.sort()
+print(p_words)
+
+p_words.sort(reverse=True)
+print(p_words)
+
+print(len(p_words))
+print(len(m_words))
+
+print(p_words)
+p_words.reverse()
+print(p_words)
