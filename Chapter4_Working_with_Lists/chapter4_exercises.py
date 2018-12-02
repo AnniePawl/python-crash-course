@@ -11,11 +11,16 @@ fruits = ['apples', 'pears','peaches']
 for fruit in fruits:
     print ("Mmm! These " + fruit + " taste so good!")
 
-
 toppings = ['garlic','basil','olive oil']
 for topping in toppings:
     print("I love my pasta with extra " + topping)
 print("Wow I love pasta!")
+
+b_words = ['bamboo','bunny','bukly']
+print("Here are some words that start with the letter 'B':")
+for b in b_words:
+    print(b.title() + " starts with 'B'")
+
 
 # Make a list of numbers using range
 num_list = list(range(1,5))
@@ -224,3 +229,7 @@ del fave_flavors[1]
 fave_flavors.pop(3)
 fave_flavors.remove('watermelon')
 print(fave_flavors)
+
+
+for value in range(1,5):
+    print(value)

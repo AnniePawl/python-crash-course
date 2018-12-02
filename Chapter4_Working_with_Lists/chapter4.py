@@ -1,104 +1,120 @@
-# LOOPING through an Entire List
-# Allows you to run throuh all entries in a list, performing the same task with each item
-# Example- you have a list of magicians, you want to print each anme without called each individuallyself.
-magicians = ['alice', 'betty','carl']
-for magician in magicians:
-    # print (magician)
-# Line 2 tells python to pull a name from magicians and store it in a variable called, magician
-# Print a message to each magician!
-    print("Hi " + magician.title() + ", you did great!")
-# Indentation! Everything indented after for/in statement in considered in the loop
-# Code that is not indented will be executed once, without repetition
-print ("Thank you, everyone! 'twas a gr8 show'")
+# LOOPING through and ENTIRE LIST
+'''- Looping is the most common way to automate repetitive tasks.
+   - Allows you to perform same task on each item
+   - INDENTATION is key. Everything indented after for/in statement is considered in the loop
+   - Non-indented code will only be executed once'''
 
-# Another example:
-dogs = ['spot','grizzly','slobbers']
+# SIMPLE EXAMPLES
+dogs = ['boo','meli','winnie','zola']
 for dog in dogs:
-    print("My dog's name is, " + dog.title())
+    print("My dog's name is " + dog.title())
 
-# Making Numerical Lists w/range function
+# Line 2 tells python to pull a name from magicians and store it in a variable called, magician
+magicians = ['sabrina','becky','leonardo']
+for magician in magicians:
+    print("Hi " + magician.title() + ", you did great!")
+print("Thanks everyone, that was a great show!")
+
+# NUMERICAL LISTS w/ RANGE FUNCTION
 # This will print 1 2 3 and 4 (one-off)
 for value in range(1,5):
     print(value)
-
 # You can use Range to Make a LIST OF NUMBERS
 # wrap list() outside of range()
-numbers = list(range(1,4))
-print (numbers)
-# List the even numbers between 1 and 10, then odd
+numbers = list(range(1,5))
+
+# List the EVEN NUMBERS BETWEEN 1 and 10, then odd
 even_numbers = list(range(2,11,2))
 print(even_numbers)
-odd_num = list(range(1,12,2))
-print (odd_num)
+odd_numbers = list(range(1,10,2))
+print(odd_numbers)
 
 # Simple Stats
 # MIN and MAX functions
-digits = [2,5,3,1,7,5,2,9,5,3,]
-print (min(digits))
+digits = [3,55,64,73,25,1,87,66,140,31,17,3,86]
+print(min(digits))
 print(max(digits))
 sum = sum(digits)
-print (sum)
+print(sum)
 
-# Create a list of the first ten squared numbers
+# Create a list of the FIRST TEN SQUARED NUMBERS
 squares = []
-for value in range (1,11):
+for value in range(1,11):
     square = value**2
     squares.append(square)
-print (squares)
+print(squares)
 
-# List Comprehensions
+cubes = []
+for value in range(1,11):
+    cube = value**3
+    cubes.append(cube)
+print(cubes)
+
+# LIST COMPREHENSIONS
 # Allow you to create a lot of functionality in one line of code. Combines "for loop" and creation of new elements
 squares = [value**2 for value in range(1,11)]
 print(squares)
 
-# Working with Part of a List
-# Slicing a LIST to work with subset
-# Specify index of 1st and last elements(remember one-off)
-# If you don't specify 1st index, python will start from 0
-# If you don't specift 2nd index, python will print until last item
-players = ['lila','lexi','laura','lauren','lydia']
-print(players[:2])
-print(players[1:])
-# Use negatives to print numbers from end
-# This will print last 3 players in list 
-print (players[-3:])
+# WORKING w/ PART OF A LIST
+# SLICING
+''' - Slice a list to work with a subset
+    - Specify index of 1st & last elements you want to work w/
+    - Remember 'one-off' behavior
+    - If you don't specify 1st index, default start at 0
+    - If you don't specify 2ns index, will print until last num
+    - Use negative num to print from end of list
+    '''
 
-# Looping through a Slice
+green_stuff = ['grass','lime','granny smith','olive']
+print(green_stuff[:2])
+print(green_stuff[0:])
+
+# This will print last 3 items in the list
+print(green_stuff[-3:])
+
+# LOOPING through a SLICE
 # You can use "for loop" on list subset
-print ("Here are the players on my team: ")
-for player in players[0:3]:
+players = ['john','jim','jerry','jenny','jess']
+print("Here are the players on my team: ")
+for player in players[1:]:
     print(player.title())
 
-# Copying a List
+# COPYING A LIST
 # You can make a slice that includes entire original list by omitting first and second index([:]). This tells python to make a slice that starts at first item and ends at lastself.
-annas_food = ['pizza','rice pudding', 'bagel']
-kats_food = annas_food[:]
-print (annas_food)
-print (kats_food)
+anna = ['tall','pretty','smart']
+twin = anna[:]
+twin.append('clever')
+print(anna)
+print(twin)
 
 # TUPLES
-# Allow you to create a list of items that cannot change. These items are called, Immutable
-# Looks like a list, but uses () instead of []
-# Ex- permenently define size of a rectangle
-dimensions = (200, 30)
-print (dimensions[0])
-print (dimensions[1])
-# If you try to replace a value, youll get an errror
-# dimensions[0] = 250 won't work
+''' - Simple data structure
+    - Looks like lists, but with parenthesis()
+    - Allow you to create list of items that can't change
+    - Items in tuple are called 'immutable
+    - If you try to change a value, you'll get an ERROR
+    - Must redefine tuple value to change it'''
 
-#Looping through all values in a Tuple
+dimensions = (200, 500)
+print(dimensions[0])
+print(dimensions[1])
+# dimensions[0] = 250 won't work, can't overwrite like this
+
+#LOOPING through TUPLE VALUES
 for dimension in dimensions:
     print(dimension)
 
-# Writing over a Tuple
-# Can't modify a tuple, but can assign new value to variable that holds a tuple .
-# To change rectangle dimensions, redefine entire Tuple
+# WRITING OVER A TUPLE
+''' - Can't 'modify' a tuple
+    - CAN assign new value to variable holding tuple
+'''
+# To CHANGE VALES rectangle dimensions, REDEFINE entire tuple
 dimensions = (200, 50)
-print("Original dimensions:")
+print("Original Dimensions: ")
 for dimension in dimensions:
     print(dimension)
 
-dimensions = (400, 100)
-print("\nModified dimensions:")
+dimensions = (500, 500)
+print("\n Modified Dimentions: ")
 for dimension in dimensions:
     print(dimension)
