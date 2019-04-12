@@ -1,6 +1,9 @@
-# If statements
-# Python often involves examining conditions
-# If statements ecaluate is expressions are true or false
+# IF STATEMENTS
+''' - Python often involves examining conditions
+    - Conditional Tests allow you to check conditions and respond appropriately
+    - Python examines in term of True or False (boolean)'''
+
+# SIMPLE CONDITIONAL
 cars = ['audi','bmw','toyota','acura']
 for car in cars:
     if car  == 'bmw':

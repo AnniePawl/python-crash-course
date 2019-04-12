@@ -69,7 +69,6 @@ first_owned = motorcycles.pop(0)
 last_owned = motorcycles.pop()
 print("The first motorcycle I owned was a " + first_owned + ". The last motocycle I owned was a " + last_owned)
 
-
 # ORGANIZING Lists
 # sort() method to PERMANENTLY sort (Alphabetically!)
 cars = ['honda', 'toyota', 'mazda', 'ford']

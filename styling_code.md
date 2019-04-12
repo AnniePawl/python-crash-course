@@ -1,3 +1,25 @@
+
+Bios-- small but important computer component. Input/Output system
+First program to run when computer starts up. Boots operating systems.
+
+Class- A class is a blueprint/ template that defines what an object can be. Hold methods and properties.
+
+Object-- An instance of a class
+
+Instantiate tiger class 
+
+Methods are function defined in class body that provide functionality.
+
+Encapsulation restricts access to methods and variables.
+underscore denotes "private attrbue "
+
+class Employee:
+
+
+methods and functions are similar.
+functinos are called
+
+
 # Style Tips
 Avoid complexity and aim for simplicity
 

@@ -70,3 +70,10 @@ if 'apples' in fave_fruits:
 #     print("Adult admission is $10")
 # elif age > 50:
 #     print("Senior discount! $5 please")
+veggies = []
+veggies.append('carrot')
+veggies.append('brussel sprout')
+veggies.append('lettuce')
+veggies.append('cucumber')
+
+if veggie in veggies
