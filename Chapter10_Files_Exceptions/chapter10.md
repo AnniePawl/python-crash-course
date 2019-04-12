@@ -3,7 +3,8 @@
 ## Simple File Reader 
 ```with open('sample_file.txt') as file_object:
     contents = file_object.read()
-    print(contents)```
+    print(contents)
+```
 
 ### Open Function 
 The `open()` function allows the program to access a file.</br>
@@ -37,7 +38,8 @@ Use a **for loop** on a *file object* to do so</br>
 
 with open(filename) as file_object:
     for line in file_object:
-        print(line) ```
+        print(line)
+```
 
 Its convention to store the name of the file in a varaible called `filename` b/c it doesn't represent an actual file, just a string that tells Python where to find the file. 
 
@@ -51,5 +53,42 @@ with open(filename) as file_object:
     **lines = file_object.readlines()**
 
 for line in file_object:
-        print(line) 
+        print(line)
+```
+
+### Readlines Method 
+The `readlines()` method takes each line from file and stores it in a list. The list is then stored in lines, which we can continue to work with after block ends. Since each item in the `lines` corresponds to each line in the file, output matches file contents exactly. 
+
+### Working with a File's Contents 
+You can do whatever you want with the data after you read a file into memory!
+
+## Writing to a File 
+Simplest way to save data is to write it to a file. </br>
+When you write text to a file, output will still be available after you close terminal containing output. 
+
+### Writing to an Empty File 
+To write text to a file, you need to call `open()` with a *second argument*:* 
+``` with open(filename, 'w') as file_object:
+    file_object.write("I love Programming!")
+```
+Second argument, **'w'** tell Python you want to open file in **write mode**. </br>
+This file has no terminal output, but if you open the file `programming.txt` you'll see the line. </br>
+The `open()` function automatically creates file you're writing to f it doesn't already exist, but you can open a file with: </br>
+```
+`read mode ('r')`
+`write mode ('w')`
+`append mode ('a')` or 
+`read and write mode ('+r')`
+```
+
+### Writing Multiple Lines 
+The `write()` function doesn't add any newlines to text you write.</br>
+If you want to write more than a line, you should include: `\n`
+
+###Appending to a File 
+To add content to a file, you can open file in **append mode**</br>
+Any lines you write to file with be added at teh end of file. If the file doesn't exist, Python will create an empty file for you. 
+``` with open(filename, 'a') as file object:
+    file_object.write("I also love large datasets.\n")
+    file_object.write("I love creating apps.\n"
 ```
