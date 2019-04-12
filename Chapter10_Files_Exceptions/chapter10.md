@@ -92,3 +92,48 @@ Any lines you write to file with be added at teh end of file. If the file doesn'
     file_object.write("I also love large datasets.\n")
     file_object.write("I love creating apps.\n"
 ```
+
+
+# Exceptions 
+Python uses special objects called, `exceptions` to manage errors that arise during execution.</br>
+When Python doesn't know what to do next, it creates an **exception object**</br>
+If your code handles the exception, program will continue running</br>
+If code does not handle exception, program will halt and show a **traceback** which includes a report of the exception. </br>
+Exceptions are handled with `try-except` blocks.</br>
+**Try-Except Blocks** ask Python to do something. With these blocks, users will see a friendly error message that you write instead of a confusing *traceback* </br>
+A Traceback might looks something like this:
+```Traceback (most recent call last):
+     File "division.py", line 1, in <module>
+        print(5/0)
+ZeroDivisionError: division by zero
+```
+
+### Using try-except Blocks 
+Write a   `try-except` block when you think an error might occur.
+```try:
+    print(5/0)
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+```
+
+### Using Exceptions to Prevent Crashes 
+
+
+### The else Block
+
+### Handling FileNotFoundError Exception
+
+##Analyzing Text
+
+### Working with Multiple Files 
+
+###Failing Silently... 
+
+### Deciding Which Errors to Report 
+
+
+# Storing Data 
+
+## Saving and Reading User-Generated Data 
+
+## Refactoring 
