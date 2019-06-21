@@ -1,14 +1,11 @@
 # start:stop:skip
-
-name = "goobypoo"
-name.sort()
-print(name)
-
-
+animals = ['dog', 'bat', 'kitten', 'bunny', 'lizard', 'whale']
+# print(sorted(animals))
+print(len(animals))
 # squares = []
 # for value in ran
 # EXTERNAL CHARACTERISTICS
-# - Adaptability
+# - Adaptabiliprty
 # - extent to which system can be used, without modification
 # - Accuracy
 # - Degree to which it does its job
