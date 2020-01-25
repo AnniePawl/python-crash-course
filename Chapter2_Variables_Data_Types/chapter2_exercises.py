@@ -1,9 +1,9 @@
 # Store Simple Message
 message = "You're a shitty friend"
-print (message)
+print(message)
 
 tom = "Thomas"
-print ("Hello, " + tom + "! You're gr8" )
+print("Hello, " + tom + "! You're gr8")
 
 first_name = "anna"
 last_name = "pawl"
@@ -12,15 +12,15 @@ print("Hello, " + full_name + "!")
 
 car = "MazDa"
 model = "miata"
-print ("I own a " + car.title() + " " + model.title())
+print("I own a " + car.title() + " " + model.title())
 
 
 # NAME CASES
 # Store a person's name in a variable and change it to lowercase, uppercase, and titlecase
-name =  "BERNARD buttoN Cricket"
-print (name.lower())
-print (name.upper())
-print (name.title())
+name = "BERNARD buttoN Cricket"
+print(name.lower())
+print(name.upper())
+print(name.title())
 
 name = "boo jenkins"
 print(name.title())
@@ -37,39 +37,49 @@ print(name.title())
 # PRINT MULTI-LINE STRING
 print("Languages include: \n\tPython\n\tJavaScript\n\tC+")
 
-print ("""Albert Einstein once said,
+print("""Albert Einstein once said,
 \'A person who never made a mistake
  never tried anything new.\'""")
 
-print ("'A person who never made a mistake, \nnever tried anything new' \n\t -Albert Einstein")
+print("'A person who never made a mistake, \nnever tried anything new' \n\t -Albert Einstein")
 
 quotee = "Beverly"
 quote = "\nRoses are red, \nViolets are blue,\nYou're an absolutely horrible person,\nI'm going to sue."
-print (quotee + " once said: " + quote)
+print(quotee + " once said: " + quote)
 
 poem = "Roses are red\n\tViolets are blue\n\tYou're kind of shitty\n\tBut still I love you"
-print("He once wrote:\n\t" + poem )
+print("He once wrote:\n\t" + poem)
 
 
 # BASIC MATH
 # Write addition, subtraction, multiplication, and division operations that each result in the number 8
-print (5 + 3)
-print (10 - 2)
-print (2 * 4)
-print (int(16 / 2))
+print(5 + 3)
+print(10 - 2)
+print(2 * 4)
+print(int(16 / 2))
 
 # WORK WITH DIFFERENT TYPES
 fave_num = 11
-print ("My favorite number is " + str(fave_num) + "!")
+print("My favorite number is " + str(fave_num) + "!")
 
 number_of_pets = 5
-print ("He has " + str(number_of_pets) + " pets!")
+print("He has " + str(number_of_pets) + " pets!")
 
 height = 7
-print ("He was " + str(height) + "ft tall!")
+print("He was " + str(height) + "ft tall!")
 
 # Write a Happy Birthday Message!
-name = "gary"
+name = 'gary'
 age = 65
-message = "Happy " + str(age) + "th Birthday " + name.title() + "!"
-print(message)
+print("Happy " + str(age) + " th Birthday, " + name.title())
+
+name = 'kathryn'
+capName = 'KATHRYN'
+print(name.title())
+print(name.upper())
+print(capName.lower())
+
+new_line = 'Marching Two\nBy Two'
+new_tab = 'Testing\n\tTab'
+print(new_tab)
+print(new_line)
