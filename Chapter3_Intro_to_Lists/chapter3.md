@@ -1,70 +1,56 @@
 # LISTS
-Lists are awesome!
-- Lets you store info in one place
-- A collection of items in a particular order
 - You can put anything in a list
-- Square brackets [ ] indicate a list
-- List items seperated by commas'''
+- Lists le you store info in one place
+- List are a collection of items in a particular order
+- Square brackets `[ ]` indicate a list
+- List items are seperated by commas `,`
 
 ```python
 bicycles = ['cannondale', 'trek', 'redline']
-print (bicycles)
 
 fruits = ['cherry', 'banana', 'kiwi']
-print(fruits)
 ```
 
-## INDEXING
-Indexing allows you to access specific parts of a List
--  Indexing starts at zero! [1] is second item
-- To acccess last item, use special syntax [-1]
-- Index [-2] returns second to last, etc
-
+## Indexing
+Indexing allows you to access specific parts of a list
 ```python
-print(bicycles[0])
+print(bicycles[0]) # returns 1st item, indexing starts at 0
 print(bicycles[0].title())
-print(bicycles[-1])
-```
+print(bicycles[-1]) # returns last item, special syntax
+print(bicycles[-2]) # returns 2nd to last item
 
-```python 
 message = "My first bike was a " + bicycles[-1].title()
-print(message)
 ```
 
-### MODIFY ELEMENTS IN A LIST
-**To change a list value**:  <br>
-   List name, followed by item index, followed by new value
-
+## Modify elements in a list
+**To change a list value**: List name, followed by item index, followed by new value
 ```python
 motorcycles = ['yamamha','honda','suzuki']
 motorcycles[0] = 'ducati'
 print(motorcycles)
 ```
 
-#### .append 
-`.append` to add more items to the list(at end)
+### .append() Method
+`.append()` to add more items to the list   (at end)
 ```python
 motorcycles.append('ducati')
 motorcycles.append('blank')
-print(motorcycles)
-```
-#### insert() 
-`insert()`to insert item in specific location
-- Specify index, follwed by by value
-```python 
-motorcycle.insert(0, 'ducati')
-print(motorcycles)
 ```
 
-#### del 
+### insert() Method
+`insert()` to insert item in specific location. Specify index, follwed by by value
+```python 
+motorcycle.insert(0, 'ducati')
+```
+
+### del 
 del to delete items from a list, just provide index
 ```python
 del motorcycles[0]
 del motorcycles[1]
-print (motorcycles)
 ```
 
-#### Removing items by VALUE
+### Removing items by VALUE
 In this case, even though ducati was removed from the list, it is still stored in a variable, allowing us to print a statement about it
 ```python
 too_expensive = 'ducati'
@@ -72,11 +58,9 @@ motorcycles.remove(too_expensive)
 print("A " + too_expensive.title() + " is too expensive")
 ```
 
-#### pop() 
-Use `pop()` method to remove items, usually last item 
-- Can remove an item from any location, too
-- Item no longer in list, BUT...
-- Helpful b/c lets you work with item after pop!
+### pop() Method
+- Can remove an item from any location, but typically used for last item
+- Item no longer in list, BUT... Helpful b/c lets you **work with item after pop**
 ```python
 popped_motorcycle = motorcycles.pop(2)
 print (motorcycles)
@@ -87,33 +71,22 @@ last_owned = motorcycles.pop()
 print("The first motorcycle I owned was a " + first_owned + ". The last motocycle I owned was a " + last_owned)
 ```
 
-#### ORGANIZING Lists
-# sort() method 
-Use `sort()`  to PERMANENTLY sort (Alphabetically!)
+## Organizing Lists
+### Permanent Changes
+- **sort() Method** PERMANENTLY sorts list in **alphabetical** order
+- **sort(reverse = True)** Permenently sorts in **reverse alphabetical** order
 ```python
 cars = ['honda', 'toyota', 'mazda', 'ford']
 cars.sort()
-print(cars)
+cars.sort(reverse=True)
 ```
+- **reverse() Method** PERMANENTLY sorts list in **backwards order** (not alphabetical)
 
-#### (reverse = True)
-Specify `reverse = True` to return reverse alphabetical order
-```python
-cars.sort(reverse = True)
-print(cars)
-# Printing in REVERSE ORDER (NOT alphabetical)
-# PERMANENT Change
-print (cars.reverse())
-```
+### Temporary Changes
+- **sorted()** to TEMPORARILY sort lists in **alphabetical order** <br>
+This maintains original order, but presents/prints sorted order <br>
+- **sorted(reverse = True)** will print in REVERSE ALPHABETICAL order
 
-#### sorted() 
-Use `sorted()` to TEMPORARILY sort lists <br>
-This maintains original order, but presents sorted order
-`print(sorted(cars))`
-
-#### len() method
-Use to find legnth of a list
+#### len() Method
+Use to find legnth of a list <br>
 `print (len(cars)`
-
-#### AVOIDING INDEX ERRORS
-Be careful of 'list index out of range'

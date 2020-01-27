@@ -383,8 +383,6 @@ dogs = ['winnie', 'boo', 'bella']
 dogs.sort(reverse=True)
 print(dogs)
 
-letters = ['c', 'a', 'b']
-print(sorted(letters))
-print(sorted(letters, reverse=True))
-letters.sort(reverse=True)
+letters = ['c', 'a', 'b', 'd']
+letters.reverse()
 print(letters)

@@ -1,37 +1,40 @@
-## PRINT STATEMENT
+# The Basics 
+### Print Statement
 The easiest way to get python program to communicate with you via the terminal.<br>
-*Dont Forget, in Python3, print statement needs parenthesis()
-`print("Hello World")`
+In **Python3**, print statement needs parenthesis`( )` <br>
+Example: `print('Hello World')`
 
-### MY FIRST VARIABLE
-```python
-message = "Life is Good"
-print(message)
-```
-**Variable Rules:**
+## Variables
  - Can contain letters, numbers, underscore
  - Cannot start with a number
  - NO spaces, use underscore
  - Names should be short and descriptive
+```python
+message = "Life is Good"
+print(message)
+```
 
-### STRING METHODS
+## String Methods
+Python includes a number of built-in methods that can be used to manipulate strings.<br>
+Here are a few commmon examples: 
 ```python
 name = "Ada Lovelace"
-print(name.title()) # transfors name to title case
+print(name.title()) # transforms name to title case
 print(name.upper()) # uppercases everything
 print(name.lower()) # lowercases everything
 ``` 
 
-### CONCATENATING STRINGS
+## Concatenating Strings
+Use `+` to merge/ combine strings
 ```python
 first_name = "ada"
 last_name = "lovelace"
-full_name = first_name + " " + last_name # remember empty space for string
+full_name = first_name + " " + last_name # remember empty space for space
 print(full_name.title())
 print("Hello, " + full_name.title())
 ```
 
-### ESCAPING STRINGS
+## Escaping Strings
 - `(\n)` adds a new line
 - `(\t)` adds a new tab
 - `(.rstrip)` strips right whitespace
@@ -41,21 +44,20 @@ print("\tPython")
 print("Hey there" "\nHandsome")
 ```
 
-### WORKING WITH NUMBERS
-- Integers  (Whole Numbers)
-- Arithmetic Operators
-- Addition (+)
-- Subtraction (-)
-- Multiplication (*)
-- Division (/)
-- Python supports order of operations!- Careful
+## Working with Numbers
+**Arithmetic Operators** can be used to manipulate numbers <br>
+Python supports **order of operations**. Be careful!
+- Addition `+`
+- Subtraction `-`
+- Multiplication `*`
+- Division `/`
 
-### AVOIDING TYPE ERRORS w/ STRINGS
-Be careful when working w/ various types.
-Make sure to tell python how to interpret certain values
+## Avoiding Type Errors
+Be careful when working w/ various types.<br>
+Make sure to tell python how to interpret certain values!
 ```python 
-age = 25
-name = "Linda"
+age = 25 #Type=number
+name = "Linda" #Type=string
 message = "Happy " + str(age) + " birthday, " + name
 print(message)
 ```
