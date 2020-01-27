@@ -4,12 +4,14 @@
     - Python examines in term of True or False (boolean)'''
 
 # SIMPLE CONDITIONAL
+```python
 cars = ['audi','bmw','toyota','acura']
 for car in cars:
     if car  == 'bmw':
         print (car.upper())
     else:
         print(car.title())
+```
 
 # CONDITIONAL TESTS
 # Remember that it's case sensitive!
@@ -74,6 +76,7 @@ else:
     print("Your admission is $10")
 # You can use infinate elif blocks
 # *Just use multiple if statements if you want ot run through all the statments
+```python
 herbs = ['basil','mint','sage']
 if 'basil' in herbs:
     print("I have basil!")
@@ -81,6 +84,7 @@ if 'mint' in herbs:
     print("I have mint!")
 if 'sage' in herbs:
     print("I have sage!")
+```
 
 # Using if statements with LISTS
 # You can watch for special values that need to be treated differently
@@ -88,21 +92,26 @@ if 'sage' in herbs:
 requested_sizes = ['small','extra-small','medium']
 for requested_size in requested_sizes:
 # What if the store runs out of smalls!?
+```python
     if requested_size == 'small':
         print("Sorry! We're out of smalls...")
     else:
         print("Adding " + requested_size + " to your cart!")
+```
 
 # Check if a list is not empty
 # When the name of a lsit is used in an if statement, python returns true if the list contains atleast 1 item. Otherwise, its false
+```python
 toppings = ['sprinkles']
 if toppings:
     for topping in toppings:
         print("Adding " + topping)
+```
 
 # Using Multiple Lists
 # You can use lists and if statements to make sure your input makes sense before acting on it
 # Check list of available toppings against requested toppings
+```python
 available_toppings = ['sprinkles','fudge']
 requested_toppings = ['sprinkles','ants']
 
@@ -111,3 +120,4 @@ for requested_topping in requested_toppings:
         print("Adding " + requested_topping)
     else:
         print("Sorry we don't have " + requested_topping)
+```

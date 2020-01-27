@@ -237,3 +237,5 @@ print(cubes)
 square = [value**2 for value in range(1, 6)
           ]
 print(squares)
+
+list
