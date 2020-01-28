@@ -1,10 +1,9 @@
-# The Basics 
-### Print Statement
-The easiest way to get python program to communicate with you via the terminal.<br>
-In **Python3**, print statement needs parenthesis`( )` <br>
-Example: `print('Hello World')`
+## The Basics 
+The easiest way to get python program to communicate with you via **print statements** and the **terminal**.<br>
+`print('Hello World')`
 
-## Variables
+### Variables
+Variables in python are containers for storing data. Some  basic rules:
  - Can contain letters, numbers, underscore
  - Cannot start with a number
  - NO spaces, use underscore
@@ -14,50 +13,43 @@ message = "Life is Good"
 print(message)
 ```
 
-## String Methods
+### String Methods
 Python includes a number of built-in methods that can be used to manipulate strings.<br>
 Here are a few commmon examples: 
 ```python
-name = "Ada Lovelace"
-print(name.title()) # transforms name to title case
-print(name.upper()) # uppercases everything
-print(name.lower()) # lowercases everything
+name = "Ada lovelace"
+print(name.title()) # Ada Lovelace
+print(name.upper()) # ADA LOVELACE
+print(name.lower()) # ada lovelace 
 ``` 
 
-## Concatenating Strings
+### Concatenating Strings
 Use `+` to merge/ combine strings
 ```python
 first_name = "ada"
 last_name = "lovelace"
-full_name = first_name + " " + last_name # remember empty space for space
-print(full_name.title())
+full_name = first_name + " " + last_name # empty string for space
 print("Hello, " + full_name.title())
 ```
 
-## Escaping Strings
+### Escaping Strings
 - `(\n)` adds a new line
 - `(\t)` adds a new tab
 - `(.rstrip)` strips right whitespace
 - `(.lstrip)` strips left whitespace
-```python
-print("\tPython")
-print("Hey there" "\nHandsome")
-```
 
-## Working with Numbers
-**Arithmetic Operators** can be used to manipulate numbers <br>
+### Arithmetic Operators
 Python supports **order of operations**. Be careful!
 - Addition `+`
 - Subtraction `-`
 - Multiplication `*`
 - Division `/`
 
-## Avoiding Type Errors
+### Avoiding Type Errors
 Be careful when working w/ various types.<br>
 Make sure to tell python how to interpret certain values!
 ```python 
-age = 25 #Type=number
-name = "Linda" #Type=string
+age = 25 # type = number
+name = "Linda" # type = string
 message = "Happy " + str(age) + " birthday, " + name
-print(message)
 ```
