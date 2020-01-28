@@ -1,6 +1,6 @@
 # LISTS
 - You can put anything in a list
-- Lists le you store info in one place
+- Lists let you store info in one place
 - List are a collection of items in a particular order
 - Square brackets `[ ]` indicate a list
 - List items are seperated by commas `,`
@@ -22,7 +22,7 @@ print(bicycles[-2]) # returns 2nd to last item
 message = "My first bike was a " + bicycles[-1].title()
 ```
 
-## Modify elements in a list
+## Modify Elements in a List
 **To change a list value**: List name, followed by item index, followed by new value
 ```python
 motorcycles = ['yamamha','honda','suzuki']
@@ -37,7 +37,7 @@ motorcycles.append('ducati')
 motorcycles.append('blank')
 ```
 
-### insert() Method
+### .insert() Method
 `insert()` to insert item in specific location. Specify index, follwed by by value
 ```python 
 motorcycle.insert(0, 'ducati')
@@ -50,7 +50,7 @@ del motorcycles[0]
 del motorcycles[1]
 ```
 
-### Removing items by VALUE
+### Removing items by Value
 In this case, even though ducati was removed from the list, it is still stored in a variable, allowing us to print a statement about it
 ```python
 too_expensive = 'ducati'

@@ -88,17 +88,3 @@ for number in numbers:
         print(str(number) + "rd")
     else:
         print(str(number) + "th")
-
-
-squares = []
-for number in range(1, 11):
-    square = number**2
-    squares.append(square)
-print(squares)
-
-# List Comprehension
-squares = [value**2 for value in range(1, 11)]
-print("More Squares:" + str(squares))
-
-cubes = [value**3 for value in range(1, 11)]
-print("Cubes: " + str(cubes))

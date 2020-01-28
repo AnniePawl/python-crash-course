@@ -1,24 +1,25 @@
 # CLASSES
-    # Should be capitalized
-    # Written in CamelCaps
-    # Intance and module names written in lowercase w/ underscres
-    # Every class shoud have docstring immediate after def
-    # Blank Spaces
+- Should be capitalized
+- Written in camelCaps
+- Intance and module names written in lowercase w/ underscres
+- Every class shoud have docstring immediate after def
+- Blank Spaces
         # 1 line btwn methods in a class
         # 2 lines between seperate classes
-    # In OOP they represent real-world things and situations
-    # Like a blueprint or set of instructions
+- In OOP they represent real-world things and situations
+- Like a blueprint or set of instructions
 
-# OBJECTS
-    # are created based on classes
-    # each is automatically equipped w/ general behavior
-    # You can give each whatever unique traits you want
+## OBJECTS
+- are created based on classes
+- each is automatically equipped w/ general behavior
+- You can give each whatever unique traits you want
 
-# INSTANTIATION
-    # When you make an object from a class
+## INSTANTIATION
+When you make an object from a class
 
-# CREATING & USING A CLASS
-    # Dog class w/ traits common to most dogs
+## CREATING & USING A CLASS
+Dog class w/ traits common to most dogs
+```python
 class Dog():
     '''simple dog model'''
 
@@ -34,43 +35,53 @@ class Dog():
     def roll_over(self):
         '''simulate rolling in response to a command'''
         print(self.name.title() + " rolled over!")
+```
 
-# THE __init__() METHOD
-    # Methods are functions that are part of aclass
-    # Init method is special. Python automatically runs it whenever it creates a new instance
-        # SELF PARAMETER
-        # Required in method definition
-        # Must come before other parameters
-        # Every method call associated with a class automatically passes self, which is a reference to instance, itself
-        # Gives individual instance access to attributes and methods in the class
-        # Every variable has prefix 'self'
-        # 'self.blank' is available to every method in the class
-        # We can also access these variables through any instance created from the class.
-# MAKING AN INSTANCE FROM A CLASS
+## THE __init__() METHOD
+Methods are functions that are part of a class <br>
+Init method is special. Python automatically runs it whenever it creates a new instance<br>
+**Self Parameter**
+- Required in method definition
+- Must come before other parameters
+- Every method call associated with a class automatically passes self, which is a reference to instance, itself
+- Gives individual instance access to attributes and methods in the class
+- Every variable has prefix 'self'
+- 'self.blank' is available to every method in the class
+- We can also access these variables through any instance created from the class.
+
+## Making an Instance from a Class
+```python
 my_dog = Dog('willie', 6)
 
 print("My dog's name is " + my_dog.name.title() + ".")
 print("My dog is " + str(my_dog.age) + " years old.")
+```
 
-# ACCESSING ATTRIBUTES
-    # Use dot notation to access instance ATTRIBUTES
-my_dog.name
-my_dog.age
+### Accessing Attributes
+Use dot notation to access instance ATTRIBUTES
+```python
+my_dog.name()
+my_dog.age()
+```
 
-# CALLING METHODS
-    # Use dot notation to call any method defined in class
+### Calling Methods
+Use dot notation to call any method defined in class
+```python
 my_dog.sit()
 my_dog.roll_over()
+```
 
-# CREATING MULTIPLE INSTANCES
-    # You can create as many instances as you need
+## Creating Multiple Instances
+You can create as many instances as you need
+```python
 my_dog = Dog('carly', 13)
 print("My dog's name is " + my_dog.name.title() + ".")
 print(my_dog.name.title() + " is now " + str(my_dog.age) + " years old!")
+```
 
-
-# WORKING WITH CLASSES & INSTANCES
-    # You can modify attributes of an instance directly of write methods that update attributes in specific ways
+## Working with Classes and Instances
+You can modify attributes of an instance directly of write methods that update attributes in specific ways
+```python
 class Car():
     '''simple attempt to represent a car'''
     def __init__(self, make, model, year):
@@ -86,10 +97,11 @@ class Car():
 
 my_new_car = Car('audi','a4','2016')
 print(my_new_car.get_descriptive_name())
+```
 
-# Setting DEFAULT VALUE for ATTRIBUTE
-    # Every attribute in a class needs an initial vaue
-
+#### Setting DEFAULT VALUE for ATTRIBUTE
+Every attribute in a class needs an initial vaue
+```python
 class Car():
     def __init__(self, make, model, year):
         self.make = make
@@ -106,22 +118,25 @@ my_new_car = Car('BMW', 'a7', '1999')
 my_new_car.color = "black"
 print(my_new_car.color)
 my_new_car.read_odometer()
+```
 
-# MODIFYING ATTRIBUTE VALUES
-# You can change in 3 ways:
-    # Change value directly through an instance
-    # Set value through method
-    # Increment the Value through a method
+### MODIFYING ATTRIBUTE VALUES
+You can change in 3 ways:
+1. Change value directly through an instance
+2. Set value through method
+3. Increment the Value through a method
 
-# Modifying Attribue value DIRECTLY
-    # This is teh simples way
-    # Use dot notation to access value, reset it
+### Modifying Attribue value DIRECTLY
+Simplest way. Use dot notation to access value, reset it
+```python
 my_new_car.odometer_reading = 33
 my_new_car.read_odometer()
+```
 
-# Modifying Attribute Value THROUGH METHOD
-    # Helpful to have methods that update attributes for you
-    # Pass new value to a method that handles updating internally
+### Modifying Attribute Value THROUGH METHOD
+Helpful to have methods that update attributes for you<br>
+Pass new value to a method that handles updating internally
+```python
 class Car():
     def __init__(self, make, model, year):
         self.make = make
@@ -147,8 +162,10 @@ my_new_car.read_odometer()
 
 my_new_car.update_odometer(23)
 my_new_car.read_odometer()
+```
 
 # INCREMENTING Attribute Value THROUGH METHOD
+```python
 class Car():
     def __init__(self, make, model, year):
         self.make = make
@@ -187,19 +204,21 @@ my_used_car.read_odometer()
 
 my_used_car.increment_odometer(1000)
 my_used_car.read_odometer()
+```
 
 
-# INHERIANCE
-    # When one class inherits from another, it automatically takes on all attributes and methods of first class
-    # Original class called, PARENT CLASS
-    # New class called, CHILD CLASS
-    # While child class inherits from parent, it can also define new attributes and methods of its own
+## Inheritance
+- When one class inherits from another, it automatically takes on all attributes and methods of first class
+- Original class called, PARENT CLASS
+- New class called, CHILD CLASS
+- While child class inherits from parent, it can also define new attributes and methods of its own
 
-# INIT METHOD for CHILD CLASS
+## INIT METHOD for CHILD CLASS
     # Create a new class that does everything Car class does
     # Name of parent class must be in (parenthesis) in child class definition
-# SUPER Function !
-    # helps python make connections between parent & child
+## SUPER Function !
+Helps python make connections between parent & child
+```python
 class Electric_car(Car):
     '''represent aspects of car, specific to electric cars'''
 
@@ -209,9 +228,11 @@ class Electric_car(Car):
 
 my_tesla = Electric_car('tesla','model s','2015')
 print(my_tesla.get_descriptive_name())
+```
 
-# DEFINING ATTRIBUTES & METHODS for CHILD CLASS
-    # you can add more to differentiate child from parent
+# Defining Attributes & Methods for Child Class
+You can add more to differentiate child from parent
+```python
 class ElectricCar(Car):
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
@@ -223,60 +244,63 @@ class ElectricCar(Car):
 
 my_tesla = ElectricCar('tesla','model s','2013')
 my_tesla.describe_battery()
+```
 
 
-# OVERRIDING METHODS from the PARENTS CLASS
-    # you can override methods that don't fit with what you're trying to model child
-    # Define method with same name as in method you want to override  in parent class
+### Overring methodsfrom the Parent Class
+You can override methods that don't fit with what you're trying to model child
+- Define method with same name as in method you want to override  in parent class
+```python
     '''def fill_gas_tank():
         '''electric cars dont have gas tanks'''
         print("This car doesn't need gas!")
         '''
+```
 
-# INSTANCES AS ATTRIBUTES
-    # Sometimes good to reorganize classes into smaller classes
+#### INSTANCES AS ATTRIBUTES
+Sometimes good to reorganize classes into smaller classes
+```python
     class Battery():
         '''Attempt to model battery for electric car'''
         def __init__(self, battery_size=70):
             '''initialize battery attributes'''
             self.battery_size = battery_size
-
+```
 
 # MODELING REAL WORLD OBJECTS
 
-# IMPORTING CLASSES
-    # Files should be as uncluttered as possible
-    # Good to store classes in modules, then import class you need into main program
-
-    # IMPORTING A SINGLE CLASS
+## IMPORTING CLASSES
+- Files should be as uncluttered as possible
+- Good to store classes in modules, then import class you need into main program
+- IMPORTING A SINGLE CLASS
     from car import Car
 
-# STORING MULTIPLE CLASSES in a MODULE
-    # You can store as many as you need in a module
+## STORING MULTIPLE CLASSES in a MODULE
+You can store as many as you need in a module
     from car import ElectricCar
 
-# IMPORTING MULTPLE CLASSES from a module
+### IMPORTING MULTPLE CLASSES from a module
 
-# IMPORTING AN ENTIRE MODULE
+#### IMPORTING AN ENTIRE MODULE
 import car
 
-# IMPORTING ALL CLASSES from a MODULE
-    # Not really recommended
-        # Unclear what classes you're using from module
-        # Confusion with names in files
-    # Use this syntax to import every class
-    from module_name import *
-    # better to use the follwing though...
-    module_name.class_name
+### IMPORTING ALL CLASSES from a MODULE
+Not really recommended
+- Unclear what classes you're using from module
+- Confusion with names in files
+- Use this syntax to import every class
+    `from module_name import *`
+- better to use the follwing though...
+    `module_name.class_name`
 
 # IMPORTING A MODULE INTO A MODULE
-# Sometimes you want to spread classes over several modules to kepe any one file from growing too large adn avoid storing unrelated classes in the same module
-# You might find that a class in one depends on a class in another. You can import required class into first module
+Sometimes you want to spread classes over several modules to kepe any one file from growing too large adn avoid storing unrelated classes in the same module. <br>
+You might find that a class in one depends on a class in another. You can import required class into first module
 from car import car
 from Electric_car import ElectricCar
 
-# PYTHON STANDARD LIBRARY
-    # Included in each python installation
-    # You can use any function or class in standard library by including simple IMPORT STATEMENT at file top
-    # Take advantage of DICTIONARIES to connect pieces of information
-        # Try using OrderedDict class from collections modules
+## PYTHON STANDARD LIBRARY
+Included in each python installation
+- You can use any function or class in standard library by including simple IMPORT STATEMENT at file top
+- Take advantage of DICTIONARIES to connect pieces of information
+- Try using OrderedDict class from collections modules
