@@ -90,51 +90,15 @@ for number in numbers:
         print(str(number) + "th")
 
 
-def siblings(siblings):
-    return 'boo' not in siblings
+squares = []
+for number in range(1, 11):
+    square = number**2
+    squares.append(square)
+print(squares)
 
+# List Comprehension
+squares = [value**2 for value in range(1, 11)]
+print("More Squares:" + str(squares))
 
-print(siblings(['Anna', 'Joey', 'Kat']))
-
-
-def hello_admin(username):
-    if username == "":
-        return "We need to find some users!"
-    elif username == 'admin':
-        return "Hello Admin, would you like a  status report?"
-    else:
-        return "Hello, " + username
-
-
-print(hello_admin("admin"))
-print(hello_admin("Anna"))
-print(hello_admin(""))
-
-
-def createUsername(current_usernames,  new_usernames):
-    for new_username in new_usernames:
-        if new_username in current_usernames:
-            print(new_username + " is already taken, try again")
-        else:
-            print(new_username + " is available")
-
-
-current_usernames = ['Anna', 'Joey', 'Kat', 'Nancy', 'Gary']
-new_usernames = ['Nancy', 'Gary',  'Winnie', 'Boo']
-
-print(createUsername(current_usernames, new_usernames))
-
-
-def ordinal_numbers(numbers):
-    for num in numbers:
-        if num == 1:
-            print(str(num) + "st")
-        elif num == 2:
-            print(str(num) + "nd")
-        elif num == 3:
-            print(str(num) + "rd")
-        else:
-            print(str(num) + "th")
-
-
-print(ordinal_numbers([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+cubes = [value**3 for value in range(1, 11)]
+print("Cubes: " + str(cubes))
